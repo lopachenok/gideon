@@ -1,0 +1,37 @@
+.carriers {
+  padding: 50px 0;
+  background: url(carriers-bg.png);
+  background-size: cover;
+  
+  &__slider {
+    width: 90%;
+    margin: 60px auto 0;
+  }
+  
+  
+  &__slider img{
+    width: 235px;
+    height: 130px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+  }
+  
+  .slick-next:before, .slick-prev:before {
+    content: '';
+    background: none;
+    border-bottom: 1px solid #072566;
+    border-left: 1px solid #072566;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  
+  .slick-prev:before {
+    transform: rotate(45);
+  }
+  
+  .slick-next:before {
+    transform: rotate(225);
+  }
+}

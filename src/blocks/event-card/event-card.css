@@ -1,0 +1,52 @@
+.event-card {
+  margin-top: 30px;
+  
+  &__img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  &__header {
+    height: 80px;
+    padding: 13px;
+    
+    &--yellow {
+      background-color: #f1bb3f;
+    }
+    
+    &--green {
+      background-color: #a5be69;
+    }
+    
+    &--blue {
+      background-color: #01a89e;
+    }
+    
+    &--purple {
+      background-color: #bc5783;
+    }
+  }
+  
+  &__icon {
+    float: left;
+    width: 50px;
+    height: 40px;
+    margin-right: 40px;
+    background: url(event-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &__title {
+    color: white;
+    font-size: 20px;
+    line-height: 22px;
+    
+    &--centred {
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+}

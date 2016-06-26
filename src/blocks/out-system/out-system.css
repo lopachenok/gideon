@@ -1,0 +1,9 @@
+.out-system {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  overflow: hidden;
+  
+  &__img {
+    width: 100%;
+  }
+}

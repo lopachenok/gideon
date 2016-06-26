@@ -1,1 +1,2 @@
-//= ../bower_components/bootstrap/dist/js/bootstrap.js
+//= ../bower_components/jquery/dist/jquery.min.js
+//= ../libs/slick/slick.js

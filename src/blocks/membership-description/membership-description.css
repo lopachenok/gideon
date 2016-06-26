@@ -1,0 +1,11 @@
+.membership-description {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  
+  @media (max-width: 380px) {
+    font-size: 40px;
+  }
+}

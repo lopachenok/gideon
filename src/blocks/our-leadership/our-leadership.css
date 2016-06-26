@@ -1,0 +1,21 @@
+.our-leadership {
+  padding-top: 30px;
+  
+  &__photo-section {    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  &__photo {
+    margin-top: 35px;
+    display: block;
+    width: 125px;
+    height: 125px;
+    
+     @media (max-width: 1200px) {
+       width: 175px;
+       height: 175px;
+     }
+  }
+}

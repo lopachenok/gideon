@@ -1,0 +1,15 @@
+.membership-title {
+  color: #f1bb3f;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 68px;
+  text-align: center;
+  
+  @media (max-width: 380px) {
+    font-size: 40px;
+  }  
+  
+  &--red {
+    color: #e32636;
+  }
+}

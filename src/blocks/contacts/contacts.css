@@ -1,0 +1,42 @@
+.contacts {
+  
+  &__list {
+    margin-top: 30px;
+  }
+  
+  &__item {
+    list-style: none;
+    margin-bottom: 25px;
+    min-height: 40px;
+  }
+  
+  &__icon {
+    float: left;
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    
+    &--phone {
+      background: url(phone-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    &--map {
+      background: url(map-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    &--mail {
+      background: url(mail-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }    
+  }
+  
+  &__text {
+    color: #fff;
+    font-size: 14px;
+  }
+}

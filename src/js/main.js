@@ -1,1 +1,2 @@
-//= ../blocks/block/block.js
+//= ../blocks/carriers/carriers.js
+//= ../blocks/main-menu/main-menu.js

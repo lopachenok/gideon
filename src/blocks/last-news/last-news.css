@@ -1,0 +1,10 @@
+.last-news {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+  
+  @media (max-width: 850px) {
+      padding-top: 105px;
+   }
+}

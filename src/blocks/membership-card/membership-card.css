@@ -1,0 +1,65 @@
+.membership-card {
+  height: 169px;
+  margin-bottom: 25px;
+  
+   @media (max-width: 370px) {
+      height: 120px;
+    }
+  
+  
+  &__icon {
+    background-color: #a1a2a9;
+    float: left;
+    width: 168px;
+    height: 100%;
+    
+    @media (max-width: 370px) {
+      width: 120px;
+    }
+    
+    &--gold {
+      background-color: #f1bb3f;
+    }
+  }
+  
+  &__content {
+    padding-left: 198px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    background: #fff;
+    height: 100%;
+    
+     @media (max-width: 370px) {
+      padding-left: 140px;
+       padding-top: 15px;
+      }
+  }
+  
+  &__title {
+    color: #e32636;
+    font-size: 20px;
+    line-height: 25px; 
+    
+    @media (max-width: 410px) {
+      font-size: 18px;
+    }  
+    
+    @media (max-width: 370px) {
+     font-size: 15px !important;
+    }
+    
+    
+  }
+  
+  &__text {
+    color: #333;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    
+    @media (max-width: 510px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  
+  @media (max-width: 850px) {
+      padding-top: 105px;
+   }
+}
