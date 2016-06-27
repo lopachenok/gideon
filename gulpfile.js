@@ -102,12 +102,12 @@ gulp.task('img', function () {
     .pipe(debug({title: 'img'}))
     .pipe(newer(dirs.build + '/img'))  
     .pipe(debug({title: 'cached'}))
-    .pipe(imagemin({
-            progressive: true,
-            optimizationLevel: 5,
-            //use: [pngquant()],
-            interlaced: true
-          }))
+//    .pipe(imagemin({
+//            progressive: true,
+//            optimizationLevel: 5,
+//            //use: [pngquant()],
+//            interlaced: true
+//          }))
     .pipe(debug({title: 'imgmin'}))
     .pipe(rename(function(path){  // удаляем текущий dirname
       path.dirname = '';

@@ -5,6 +5,7 @@
   
   &__header {
     height: 190px;
+    padding-top: 40px;
     
     &--yellow {
       background-color: #f1bb3f;
@@ -67,5 +68,13 @@
     color: #333;
     font-size: 16px;
     line-height: 22px;
+  }
+  
+  &__icon {
+    color: #fff;    
+    height: 92px;
+    text-align: center;
+    display: block;  
+    font-size: 100px;
   }
 }

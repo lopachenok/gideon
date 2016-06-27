@@ -1,0 +1,33 @@
+.icon-calendar {
+  border: 1px solid rgba(155, 154, 155, 0.62);
+  border-radius: 2px;
+  height: 100%;
+  
+  &__header {
+    color: #fff;
+    background-color: #394a58;
+    border-radius: 2px 2px 0 0;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  &__date {
+    background: #fff;
+    color: #e32636;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  &--light {
+    border-color: #fff;
+  }
+  
+  &--light &__header {
+    background: #fff;
+  }
+  
+  &--light &__date{
+    background: transparent;
+    color: #fff;
+  }
+}

@@ -16,24 +16,12 @@
     width: 42px;
     height: 42px;
     margin-right: 10px;
-    
-    &--facebook {
-      background: url(facebook.png);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    
-    &--youtube {
-      background: url(youtube.png);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    
-    &--linkedin {
-      background: url(linkedin.png);
-      background-repeat: no-repeat;
-      background-position: center;
-    }    
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    color: #394a58;
+    font-size: 18px;
+    padding-top: 12px;
   }
   
   &__text {

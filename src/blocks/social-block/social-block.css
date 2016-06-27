@@ -33,6 +33,10 @@
     height: 40px;
     background-color: rgba(0, 0, 0, .2);
     border-radius: 100px;
+    color: #fff;
+    font-size: 17px;
+    padding-top: 11px;
+    text-align: center;
   }
   
   &__counter {

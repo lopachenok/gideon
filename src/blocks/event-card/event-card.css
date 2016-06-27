@@ -14,29 +14,42 @@
     
     &--yellow {
       background-color: #f1bb3f;
+      
+      .icon-calendar__header {
+        color: #f1bb3f
+      }
     }
     
     &--green {
       background-color: #a5be69;
+      
+      .icon-calendar__header {
+        color: #a5be69
+      }
     }
     
     &--blue {
       background-color: #01a89e;
+      
+      .icon-calendar__header {
+        color: #01a89e
+      }
     }
     
     &--purple {
       background-color: #bc5783;
+      
+      .icon-calendar__header {
+        color: #bc5783
+      }
     }
   }
   
   &__icon {
     float: left;
     width: 50px;
-    height: 40px;
-    margin-right: 40px;
-    background: url(event-icon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 45px;
+    margin-right: 40px;    
   }
   
   &__title {
