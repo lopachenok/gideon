@@ -39,7 +39,21 @@
       padding-left: 140px;
        padding-top: 15px;
       }
+    
+    &--centred {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 25px 0 15px;
+      
+      @media (max-width: 370px) {
+        padding: 0px 10px;
+      }
+      
+    }
   }
+  
+  
   
   &__title {
     color: #e32636;

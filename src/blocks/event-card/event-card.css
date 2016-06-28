@@ -12,6 +12,11 @@
     height: 80px;
     padding: 13px;
     
+    &--noimg {
+      height: 60px;
+      padding: 3px;
+    }
+    
     &--yellow {
       background-color: #f1bb3f;
       

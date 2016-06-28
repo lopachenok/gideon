@@ -57,7 +57,19 @@ gulp.task('css', function(){
                   }
                 });
               },
-              stylelint(),
+
+             
+
+              function (cssRule) {
+                cssRule.walkDecls(/^transform/, function (decl) {
+                  if (decl.value.indexOf('rotate') !== -1) {
+                    decl.value = decl.value.slice(0,  decl.value.length-1);
+                    decl.value = decl.value + 'deg)';
+                  }
+                });
+              },
+              //stylelint(),
+
               reporter({ clearMessages: true }),
               autoprefixer({browsers: ['last 2 version']}),
               mqpacker,
@@ -141,6 +153,11 @@ gulp.task('svgsprite', function() {
       .pipe(gulpIf('*.css', gulp.dest(dirs.source + '/css'), gulp.dest(dirs.build + '/img')));
 });
 
+gulp.task('fonts', function() {
+  return gulp.src(dirs.source + '/fonts/*.*')
+         .pipe(gulp.dest(dirs.build + '/fonts'))
+});
+
 // Сборка HTML
 gulp.task('html', function() {
   return gulp.src(dirs.source + '/*.html')
@@ -183,6 +200,7 @@ gulp.task('js', function () {
 gulp.task('build', gulp.series(
   'clean',
   'svgsprite',
+  'fonts',
   gulp.parallel('css', 'img', 'js'),
   'html'
 ));

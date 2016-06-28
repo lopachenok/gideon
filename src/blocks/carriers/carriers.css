@@ -37,6 +37,10 @@
     display: block;
   }
   
+  .slick-prev {
+    left: -50px;
+  }
+  
   .slick-prev:before {
     transform: rotate(45);
   }

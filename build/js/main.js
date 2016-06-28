@@ -3,6 +3,8 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
+    autoplay: true,
+  autoplaySpeed: 2000,
     responsive: [
       
     {
@@ -35,5 +37,16 @@ $(document).ready(function(){
     e.preventDefault();
     $('.main-menu').toggleClass('main-menu--open');
   })
+});
+$(document).ready(function() {
+  $('#camera').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 3000
+  });
 });
 //# sourceMappingURL=main.js.map

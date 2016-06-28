@@ -1,8 +1,13 @@
 .gold-membership {
-  padding-top: 110px;
+  
   padding-bottom: 105px;
   background: url(gold-membership-bg.png);
   background-size: cover;
   overflow: hidden;
   position: relative;
+  
+  &__inner {
+    position: relative;
+    padding-top: 110px;
+  }
 }
