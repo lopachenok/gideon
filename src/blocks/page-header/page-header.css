@@ -23,12 +23,15 @@
     @media (max-width: 360px) {
       align-items: flex-start;
     }
+    
   }
   
   &__login{
+    
     @media (max-width: 1024px) {
       display: none;
     }
+    
   }
   
   
@@ -43,6 +46,7 @@
       right: 40px;
       top: 27px;
     }
+    
   }
   
   &__icon {
