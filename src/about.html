@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('include/head.html')
+
+<head>
+  <title>Gideon Advisers - About</title>
+  @@include('include/head.html')
+</head>
 
 <body>
   <header class="page-header">
@@ -14,13 +18,13 @@
           <li class="main-menu__item"><a href="/about.html" class="main-menu__link  main-menu__item--active">ABOUT</a></li>
           <li class="main-menu__item"><a href="/news.html" class="main-menu__link">LATEST NEWS</a></li>
           <li class="main-menu__item"><a href="/membership.html" class="main-menu__link">MEMBERSHIP</a></li>
-          <li class="main-menu__item"><a href="" class="main-menu__link">CONTACT US</a></li>
+          <li class="main-menu__item"><a href="/contacts.html" class="main-menu__link">CONTACT US</a></li>
         </ul>
       </nav>
       <a href="#" class="page-header__toggler"><span class="page-header__icon"></span></a>
 
       <div class="page-header__login">
-        <button class="btn btn--login"><span class="btn__icon"></span>Log in</button>
+        <a href="https://profectus.sharepoint.com/sites/gideonadvisers" class="btn btn--login"><span class="btn__icon"></span>Log in</a>
       </div>
     </div>
   </header>
@@ -29,22 +33,28 @@
     <section class="about">
       <div class="about__inner container">
 
-     <div class="social-block">
-        <ul class="social-block__list">
-          <li class="social-block__item">
-            <span class="social-block__icon  fa fa-facebook"></span>
-            <p class="social-block__counter">90</p>
-          </li>
-          <li class="social-block__item">
-            <span class="social-block__icon  fa fa-youtube-play"></span>
-            <p class="social-block__counter">45</p>
-          </li>
-          <li class="social-block__item">
-            <span class="social-block__icon  fa fa-linkedin-square"></span>
-            <p class="social-block__counter">69</p>
-          </li>
-        </ul>
-      </div>
+        <div class="social-block">
+          <ul class="social-block__list">
+            <li class="social-block__item">
+              <a href="https://www.facebook.com/Gideon-Advisers-1510837575902366/">
+                <span class="social-block__icon  fa fa-facebook"></span>
+                <p class="social-block__counter">90</p>
+              </a>
+            </li>
+            <li class="social-block__item">
+              <a href="https://www.youtube.com/channel/UCOC47Cv9KfdngauLrNft34A">
+                <span class="social-block__icon  fa fa-youtube-play"></span>
+                <p class="social-block__counter">45</p>
+              </a>
+            </li>
+            <li class="social-block__item">
+              <a href="https://www.linkedin.com/company/gideon-advisers?trk=company_logo">
+                <span class="social-block__icon  fa fa-linkedin-square"></span>
+                <p class="social-block__counter">69</p>
+              </a>
+            </li>
+          </ul>
+        </div>
 
         <div class="row">
           <div class="col-lg-5">
@@ -66,11 +76,41 @@
             <section class="our-leadership">
               <h2 class="section-title">Our Leadership</h2>
               <div class="our-leadership__photo-section">
-                <img src="img/leader1.png" alt="" class="our-leadership__photo">
-                <img src="img/leader2.png" alt="" class="our-leadership__photo">
-                <img src="img/leader3.png" alt="" class="our-leadership__photo">
-                <img src="img/leader4.png" alt="" class="our-leadership__photo">
-                <img src="img/leader5.png" alt="" class="our-leadership__photo">
+                <div class="our-leadership__photo-block">
+                  <img src="img/leader1.png" alt="" class="our-leadership__photo">
+                  <div class="our-leadership__description">
+                    <p class="our-leadership__name">Aleksander R. Dyo</p>
+                    <p class="our-leadership__position">Top of the table, MDRT<br><strong>Co-founder</strong></p>
+                  </div>
+                </div>
+                <div class="our-leadership__photo-block">
+                  <img src="img/leader2.png" alt="" class="our-leadership__photo">
+                  <div class="our-leadership__description">
+                    <p class="our-leadership__name">Kelly Woo</p>
+                    <p class="our-leadership__position">Top of the table, MDRT<br><strong>Co-founder</strong></p>
+                  </div>
+                </div>
+                <div class="our-leadership__photo-block">
+                  <img src="img/leader3.png" alt="" class="our-leadership__photo">
+                  <div class="our-leadership__description">
+                    <p class="our-leadership__name">Rudolf Max Paulus</p>
+                    <p class="our-leadership__position">Director of Brokerage</p>
+                  </div>
+                </div>
+                <div class="our-leadership__photo-block">
+                  <img src="img/leader4.png" alt="" class="our-leadership__photo">
+                  <div class="our-leadership__description">
+                    <p class="our-leadership__name">Dae Chon</p>
+                    <p class="our-leadership__position">Internal Wholesaler</p>
+                  </div>
+                </div>
+                <div class="our-leadership__photo-block">
+                  <img src="img/leader5.png" alt="" class="our-leadership__photo">
+                  <div class="our-leadership__description">
+                    <p class="our-leadership__name">Nick Somilleda</p>
+                    <p class="our-leadership__position">Director of Sales and Marketing</p>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -88,7 +128,7 @@
             <div class="event-card">
               <img src="img/workers-img1.png" alt="" class="event-card__img">
               <div class="event-card__header  event-card__header--green  event-card__header--noimg">
-                <p class="event-card__title  event-card__title--centred">Emerging Adviser</p>
+                <p class="event-card__title  event-card__title--centred event-card__title--link" data-toggle="modal" data-target="#emerging">Emerging Adviser</p>
               </div>
             </div>
 
@@ -98,7 +138,7 @@
             <div class="event-card">
               <img src="img/workers-img2.png" alt="" class="event-card__img">
               <div class="event-card__header  event-card__header--yellow  event-card__header--noimg">
-                <p class="event-card__title  event-card__title--centred">Experienced Adviser </p>
+                <p class="event-card__title  event-card__title--centred event-card__title--link" data-toggle="modal" data-target="#experienced">Experienced Adviser </p>
               </div>
             </div>
 
@@ -108,7 +148,7 @@
             <div class="event-card">
               <img src="img/workers-img3.png" alt="" class="event-card__img">
               <div class="event-card__header  event-card__header--blue  event-card__header--noimg">
-                <p class="event-card__title  event-card__title--centred">Advanced Adviser</p>
+                <p class="event-card__title  event-card__title--centred event-card__title--link" data-toggle="modal" data-target="#advanced">Advanced Adviser</p>
               </div>
             </div>
 
@@ -118,7 +158,7 @@
             <div class="event-card">
               <img src="img/workers-img4.png" alt="" class="event-card__img">
               <div class="event-card__header  event-card__header--purple  event-card__header--noimg">
-                <p class="event-card__title  event-card__title--centred">P&C Agencies & Banks</p>
+                <p class="event-card__title  event-card__title--centred event-card__title--link" data-toggle="modal" data-target="#banks">P&C Agencies & Banks</p>
               </div>
             </div>
 
@@ -136,24 +176,24 @@
               <h2 class="section-title">Our Adviser Evolution System</h2>
               <p class="text-section__text  text-section__text--lato  text-section__text--padding">By implementing our proprietary “Adviser Evolution System – AES" we learn about the dynamics of advisers’ business model with the purpose of building on its strengths, and identifying the areas that can use a tune-up so that all potential business opportunities are within reach. We remain closely accessible to monitor performance and make adjustments when needed. Regardless of your current success level as independent adviser, “AES” is designed for continuous growth and improvement.</p>
 
-              
-                <p class="text-section__list-title">Steps to success:</p>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <ul class="text-section__list">
-                    <li class="text-section__item">Identify current status</li>
-                    <li class="text-section__item">Design custom plan</li>
-                    <li class="text-section__item">Execute the plan</li>
-                    <li class="text-section__item">Measure the results</li>
-                  </ul>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <ul class="text-section__list  text-section__list--last">
-                    <li class="text-section__item">Fine tune the plan</li>
-                    <li class="text-section__item">Track the progress</li>
-                    <li class="text-section__item">Share the success</li>
-                  </ul>
-                </div>
-              
+
+              <p class="text-section__list-title">Steps to success:</p>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <ul class="text-section__list">
+                  <li class="text-section__item">Identify current status</li>
+                  <li class="text-section__item">Design custom plan</li>
+                  <li class="text-section__item">Execute the plan</li>
+                  <li class="text-section__item">Measure the results</li>
+                </ul>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <ul class="text-section__list  text-section__list--last">
+                  <li class="text-section__item">Fine tune the plan</li>
+                  <li class="text-section__item">Track the progress</li>
+                  <li class="text-section__item">Share the success</li>
+                </ul>
+              </div>
+
 
             </section>
 
@@ -183,8 +223,8 @@
               </li>
               <li class="contacts__item">
                 <span class="contacts__icon  contacts__icon--mail"></span>
-                <p class="contacts__text">Rudy@GideonAdvisers.com</p>
-                <p class="contacts__text">Nick@GideonAdvisers.com</p>
+                <p class="contacts__text">advisers@GideonAdvisers.com</p>
+                <p class="contacts__text">info@GideonAdvisers.com</p>
               </li>
             </ul>
           </div>
@@ -195,19 +235,19 @@
           <nav class="page-footer__menu">
             <ul class="page-footer__list">
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">Home</a>
+                <a href="/index.html" class="page-footer__link">Home</a>
               </li>
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">About</a>
+                <a href="/about.html" class="page-footer__link">About</a>
               </li>
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">Latest news</a>
+                <a href="/news.html" class="page-footer__link">Latest news</a>
               </li>
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">Membership</a>
+                <a href="/membership.html" class="page-footer__link">Membership</a>
               </li>
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">Contact us</a>
+                <a href="/contacts.html" class="page-footer__link">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -215,34 +255,117 @@
         <div class="col-md-3 col-lg-3 hide-for-small">
           <h3 class="page-footer__title">Follow us</h3>
           <div class="social">
-              <ui class="social__list">
-                <li class="social__item">
-                  <a href=""><span class="social__icon  fa fa-facebook"></span>
+            <ui class="social__list">
+              <li class="social__item">
+                <a href="https://www.facebook.com/Gideon-Advisers-1510837575902366/"><span class="social__icon  fa fa-facebook"></span>
                   <p class="social__text">Facebook page</p></a>
-                </li>
-                <li class="social__item">
-                  <a href=""><span class="social__icon  fa fa-youtube-play"></span>
+              </li>
+              <li class="social__item">
+                <a href="https://www.youtube.com/channel/UCOC47Cv9KfdngauLrNft34A"><span class="social__icon  fa fa-youtube-play"></span>
                     <p class="social__text">Youtube channel</p></a>
-                </li>
-                <li class="social__item">
-                  <a href=""><span class="social__icon  fa fa-linkedin-square"></span>
+              </li>
+              <li class="social__item">
+                <a href="https://www.linkedin.com/company/gideon-advisers?trk=company_logo"><span class="social__icon  fa fa-linkedin-square"></span>
                     <p class="social__text">Linkedin</p></a>
-                </li>
-              </ui>
-            </div>
+              </li>
+            </ui>
+          </div>
         </div>
         <div class="col-sx-12 col-sm-6 col-md-3 col-lg-3">
 
           <div class="page-footer__information">
-            <h3 class="page-footer__title">Join out news letter</h3>
+            <h3 class="page-footer__title">Join our newsletter</h3>
             <p class="page-footer__text">And always stay informed of the latest company news event!</p>
-            <button class="btn btn--signup"><span class="btn__icon"></span>Sign up</button>
+            <a href="mailto:advisers@GideonAdvisers.com?subject=Join our newsletter" class="btn btn--signup"><span class="btn__icon"></span>Sign up</a>
           </div>
 
         </div>
       </div>
     </div>
   </footer>
+
+  <div class="modal fade" id="emerging" tabindex="-1" role="dialog" aria-labelledby="emerging" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <section class="text-section">
+          <h2 class="section-title">Emerging Adviser</h2>
+          <p class="text-section__text">Starting a new career and continuing to succeed in financial industry is a bold step and challenge. Having an effective business plan is crucial. Having the needed support to execute it, even more so. Too many independent advisers do not succeed because they lack:</p>
+          <ul class="text-section__numeric-list">
+            <li class="text-section__numeric-item">Guidance/Mentorship</li>
+            <li class="text-section__numeric-item">Lead generating system</li>
+            <li class="text-section__numeric-item">Defined sales process</li>
+            <li class="text-section__numeric-item">Product knowledge</li>
+            <li class="text-section__numeric-item">Back office processing support</li>
+            <li class="text-section__numeric-item">Accountability</li>
+            <li class="text-section__numeric-item">Experience</li>
+          </ul>
+          <p class="text-section__text">By partnering with Gideon, emerging advisers can rely on a roadmap that navigates them through any unfamiliar intricacies of the sales cycle and builds the confidence and desire required for sustained success. The Gideon “Adviser Evolution System” empowers any emerging adviser to realize their full potential and become great at what they do.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="experienced" tabindex="-1" role="dialog" aria-labelledby="experienced" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <section class="text-section">
+          <h2 class="section-title">Experienced Adviser</h2>
+          <p class="text-section__text">Give yourself a pat on the back. As an experienced adviser your practice is successful. You have built a solid client base. You seem to have insightful product knowledge and supportive carrier relationships. Yet, you feel that there is still a missing piece to your business that you cannot quite identify. Could it be?</p>
+          <ul class="text-section__numeric-list">
+            <li class="text-section__numeric-item">A stronger branding image?</li>
+            <li class="text-section__numeric-item">Systemized marketing?</li>
+            <li class="text-section__numeric-item">Streamlining your practice?</li>
+            <li class="text-section__numeric-item">Automating back office support?</li>
+            <li class="text-section__numeric-item">Penetrating new markets?</li>
+            <li class="text-section__numeric-item">Becoming a specialist rather than generalist?</li>
+            <li class="text-section__numeric-item">Networking with like-minded advisers?</li>
+          </ul>
+          <p class="text-section__text">By partnering up with Gideon Advisers, we can help the experienced adviser to pinpoint and uncover the missing component. A dedicated support team is on standby and ready to place the missing puzzle piece into action so that the next level of success can be achieved.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="advanced" tabindex="-1" role="dialog" aria-labelledby="advanced" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <section class="text-section">
+          <h2 class="section-title">Advanced Adviser</h2>
+          <p class="text-section__text">The view from on top is impressive. You have a well-respected industry reputation. An abundance of loyal clients that provide you with a stream of solid referrals. Your office operation is a well-oiled and efficient machine. How can you make the impressive view a spectacular one?</p>
+          <ul class="text-section__numeric-list">
+            <li class="text-section__numeric-item">Publishing your success story?</li>
+            <li class="text-section__numeric-item">A succession plan?</li>
+            <li class="text-section__numeric-item">Supporting the next generation of advisers?</li>
+            <li class="text-section__numeric-item">Giving back to the community?</li>
+          </ul>
+          <p class="text-section__text">We at Gideon Advisers can make your success story broadcasted through many channels to help you be connected with likeminded advisers. By supporting your thriving practice, we can share your vision with individuals looking to follow your footsteps so the distance between finding you a candidate with right synergy just became shorter.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="banks" tabindex="-1" role="dialog" aria-labelledby="banks" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <section class="text-section">
+          <h2 class="section-title">P&C Agencies</h2>
+          <p class="text-section__text">You have your clients well protected when it comes to individual or commercial property, casualty and liability coverage. However, are you addressing their personal and business financial needs or leaving room for someone else to come in and grab the opportunity and cash out big time?</p>
+          <ul class="text-section__numeric-list">
+            <li class="text-section__numeric-item">Key man Insurance</li>
+            <li class="text-section__numeric-item">Buy-Sell agreement</li>
+            <li class="text-section__numeric-item">Retirement plans</li>
+            <li class="text-section__numeric-item">Exit Strategies, etc.</li>
+          </ul>
+          <p class="text-section__text">Our easy to follow proven system enables agencies of any size and clientele identify, offer and close cases with ease. Whether there is a preference to just focus on the product and implementation guidance or working jointly on first few cases to get you up and running our industry expertise and proven success can ideally work to your advantage. No need to reinvent the wheel, simply allow us to show you a smoother road to success.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
 
   @@include('include/bottom.html')
 </body>

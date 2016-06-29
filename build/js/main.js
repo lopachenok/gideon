@@ -40,7 +40,7 @@ $(document).ready(function(){
 });
 $(document).ready(function() {
   $('#camera').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     fade: true,
@@ -49,4 +49,14 @@ $(document).ready(function() {
     autoplaySpeed: 3000
   });
 });
+$(document).ready(function() {
+  $(document).on('click', '#mail-to', function(e) {
+    
+    var theme = $('#theme').val();
+    var text = $('#message').val();
+    var mailTo = "advisers@GideonAdvisers.com";
+    this.href = "mailto:"+mailTo+"?subject="+theme+"&body="+text;
+
+  })
+})
 //# sourceMappingURL=main.js.map

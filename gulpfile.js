@@ -68,8 +68,8 @@ gulp.task('css', function(){
                   }
                 });
               },
+            
               //stylelint(),
-
               reporter({ clearMessages: true }),
               autoprefixer({browsers: ['last 2 version']}),
               mqpacker,

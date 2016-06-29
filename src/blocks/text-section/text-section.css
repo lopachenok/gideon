@@ -101,4 +101,13 @@
       left: -13px;
     }
   }
+  
+  &__numeric-list {
+    padding-left: 18px;
+  }
+  
+  &__numeric-item {
+    color: #333;
+    font-size: 16px;
+  }
 }

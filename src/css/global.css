@@ -21,6 +21,11 @@ a:hover, a:visited {
   text-decoration: none;
 }
 
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
 main {
   margin-top: 80px;
 }

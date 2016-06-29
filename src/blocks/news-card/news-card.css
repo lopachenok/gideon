@@ -25,7 +25,7 @@
   &__title {
     color: #072566;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 24px;
   }
   
   &__date {
@@ -33,6 +33,7 @@
     font-size: 16px;
     line-height: 20px;
     margin-top: 5px;
+    text-transform: lowercase;
   }
   
   &__text {

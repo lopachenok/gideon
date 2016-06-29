@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('include/head.html')
-
-<body>
+<head>
+  <title>Gideon Advisers - Exclusive Membership Marketing Organization (EMMO)</title>
+  @@include('include/head.html')
+</head>
+ 
+ <body>
   <header class="page-header">
     <div class="page-header__inner container">
       <div class="logo">
@@ -14,13 +17,13 @@
           <li class="main-menu__item"><a href="/about.html" class="main-menu__link">ABOUT</a></li>
           <li class="main-menu__item"><a href="/news.html" class="main-menu__link">LATEST NEWS</a></li>
           <li class="main-menu__item"><a href="/membership.html" class="main-menu__link">MEMBERSHIP</a></li>
-          <li class="main-menu__item"><a href="" class="main-menu__link">CONTACT US</a></li>
+          <li class="main-menu__item"><a href="/contacts.html" class="main-menu__link">CONTACT US</a></li>
         </ul>
       </nav>
       <a href="#" class="page-header__toggler"><span class="page-header__icon"></span></a>
 
       <div class="page-header__login">
-        <button class="btn btn--login"><span class="btn__icon"></span>Log in</button>
+        <a href="https://profectus.sharepoint.com/sites/gideonadvisers" class="btn btn--login"><span class="btn__icon"></span>Log in</a>
       </div>
     </div>
   </header>
@@ -32,30 +35,38 @@
       <h3 class="main-banner__description">GROWTH & PROSPERITY</h3>
 -->
       <div class="main-banner__inner container">
+       
         <div class="social-block">
           <ul class="social-block__list">
             <li class="social-block__item">
-              <span class="social-block__icon  fa fa-facebook"></span>
-              <p class="social-block__counter">90</p>
+             <a href="https://www.facebook.com/Gideon-Advisers-1510837575902366/">
+               <span class="social-block__icon  fa fa-facebook"></span>
+                <p class="social-block__counter">90</p>
+             </a>              
             </li>
             <li class="social-block__item">
+             <a href="https://www.youtube.com/channel/UCOC47Cv9KfdngauLrNft34A">
               <span class="social-block__icon  fa fa-youtube-play"></span>
               <p class="social-block__counter">45</p>
+               </a>       
             </li>
             <li class="social-block__item">
+             <a href="https://www.linkedin.com/company/gideon-advisers?trk=company_logo">
               <span class="social-block__icon  fa fa-linkedin-square"></span>
               <p class="social-block__counter">69</p>
+               </a>       
             </li>
           </ul>
-        </div>        
+        </div>
+        
       </div>
       <div class="main-banner__slider" id="camera">
-          <div><img src="img/1.jpg" alt=""></div>
-          <div><img src="img/2.jpg" alt=""></div>
-          <div><img src="img/3.jpg" alt=""></div>
-          <div><img src="img/4.jpg" alt=""></div>
-          <div><img src="img/5.jpg" alt=""></div>
-        </div>
+        <div><img src="img/1.jpg" alt=""></div>
+        <div><img src="img/2.jpg" alt=""></div>
+        <div><img src="img/3.jpg" alt=""></div>
+        <div><img src="img/4.jpg" alt=""></div>
+        <div><img src="img/5.jpg" alt=""></div>
+      </div>
     </section>
 
     <section class="advantures">
@@ -66,7 +77,7 @@
             <div class="link-card">
               <div class="link-card__header  link-card__header--yellow"><i class="link-card__icon fa fa-globe" aria-hidden="true"></i></div>
               <div class="link-card__body">
-                <a href="" class="link-card__link">Marketing and Branding</a>
+                <a href="" class="link-card__link" data-toggle="modal" data-target="#marketing">Marketing and Branding</a>
                 <p class="link-card__description">What does your brand say about you? How is it reaching the masses? Whether you’re an emerging, experienced, or advanced adviser the answers to these questions can tell most of your success story or lack of one. </p>
               </div>
             </div>
@@ -77,7 +88,7 @@
             <div class="link-card">
               <div class="link-card__header  link-card__header--blue"><i class="link-card__icon fa fa-lightbulb-o" aria-hidden="true"></i></div>
               <div class="link-card__body">
-                <a href="" class="link-card__link">Creative Sales & Ideas</a>
+                <a href="" class="link-card__link" data-toggle="modal" data-target="#sales">Creative Sales & Ideas</a>
                 <p class="link-card__description">It only takes one great idea to change the direction of your success. The trick however is putting the idea into action. Even the simplest of the concepts can be challenging to implement. </p>
               </div>
             </div>
@@ -88,7 +99,7 @@
             <div class="link-card">
               <div class="link-card__header  link-card__header--purple"><i class="link-card__icon fa fa-cogs" aria-hidden="true"></i></div>
               <div class="link-card__body">
-                <a href="" class="link-card__link">Practice Management</a>
+                <a href="" class="link-card__link" data-toggle="modal" data-target="#management">Practice Management</a>
                 <p class="link-card__description">Do you make that time consuming call to your carrier to expedite the issuance of an existing case submission, or do you immediately follow up on that tremendous lead that one of your most loyal customers just gave you? </p>
               </div>
             </div>
@@ -99,7 +110,7 @@
             <div class="link-card">
               <div class="link-card__header  link-card__header--green"><i class="link-card__icon fa fa-suitcase" aria-hidden="true"></i></div>
               <div class="link-card__body">
-                <a href="" class="link-card__link">Advanced Planning</a>
+                <a href="" class="link-card__link" data-toggle="modal" data-target="#planning">Advanced Planning</a>
                 <p class="link-card__description">How would the commissions from just one solid advanced planning case impact your practice? How about two, or three? This is the arena where the founders of Gideon Advisers truly shine and are able to spread their wings and take full flight. </p>
               </div>
             </div>
@@ -158,25 +169,29 @@
                 <li class="schedule__item">
                   <span class="schedule__icon">
                     <div class="icon-calendar">
-                    <div class="icon-calendar__header">may</div>
-                    <p class="icon-calendar__date">21</p>
+                    <div class="icon-calendar__header">jul</div>
+                    <p class="icon-calendar__date">15</p>
                   </div>
                   </span>
-                  <p class="schedule__event">One Day Advisor Symposium «The Uber effect in Insurance Industry is coming». </p>
+                  <p class="schedule__event">Webinar "A golden gate to a business owner market. Learn WOTC!"</p>
+<!--
                   <p class="schedule__description">New York, Broadway</p>
                   <p class="schedule__time">6:20 PM</p>
+-->
                 </li>
 
                 <li class="schedule__item">
                   <span class="schedule__icon">
                    <div class="icon-calendar">
-                    <div class="icon-calendar__header">apr</div>
-                    <p class="icon-calendar__date">21</p>
+                    <div class="icon-calendar__header">aug</div>
+                    <p class="icon-calendar__date">05</p>
                   </div>
                   </span>
-                  <p class="schedule__event">One Day Advisor Symposium «The Uber effect in Insurance Industry is coming».</p>
+                  <p class="schedule__event">Webinar "An introduction to Tax Saving and Asset Protection strategies"</p>
+<!--
                   <p class="schedule__description">Loss Angeles, Bird way</p>
                   <p class="schedule__time">4:30 PM</p>
+-->
                 </li>
               </ul>
             </div>
@@ -204,16 +219,43 @@
             <div class="carriers__item"><img src="img/slider-img4.png"></div>
           </div>
           <div>
-            <div class="carriers__item"><img src="img/slider-img1.png"></div>
+            <div class="carriers__item"><img src="img/slider-img-5.png"></div>
           </div>
           <div>
-            <div class="carriers__item"><img src="img/slider-img2.png"></div>
+            <div class="carriers__item"><img src="img/slider-img-6.jpg"></div>
           </div>
           <div>
-            <div class="carriers__item"><img src="img/slider-img3.png"></div>
+            <div class="carriers__item"><img src="img/slider-img-7.jpg"></div>
           </div>
           <div>
-            <div class="carriers__item"><img src="img/slider-img4.png"></div>
+            <div class="carriers__item"><img src="img/slider-img-8.png"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-9.jpg"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-10.jpg"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-11.jpg"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-12.jpg"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-13.jpg"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-14.jpg"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-15.jpg"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-16.jpg"></div>
+          </div>
+          <div>
+            <div class="carriers__item"><img src="img/slider-img-17.jpg"></div>
           </div>
         </section>
       </div>
@@ -237,8 +279,8 @@
               </li>
               <li class="contacts__item">
                 <span class="contacts__icon  contacts__icon--mail"></span>
-                <p class="contacts__text">Rudy@GideonAdvisers.com</p>
-                <p class="contacts__text">Nick@GideonAdvisers.com</p>
+                <p class="contacts__text">advisers@GideonAdvisers.com</p>
+                <p class="contacts__text">info@GideonAdvisers.com</p>
               </li>
             </ul>
           </div>
@@ -249,19 +291,19 @@
           <nav class="page-footer__menu">
             <ul class="page-footer__list">
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">Home</a>
+                <a href="/index.html" class="page-footer__link">Home</a>
               </li>
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">About</a>
+                <a href="/about.html" class="page-footer__link">About</a>
               </li>
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">Latest news</a>
+                <a href="/news.html" class="page-footer__link">Latest news</a>
               </li>
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">Membership</a>
+                <a href="/membership.html" class="page-footer__link">Membership</a>
               </li>
               <li class="page-footer__item">
-                <a href="" class="page-footer__link">Contact us</a>
+                <a href="/contacts.html" class="page-footer__link">Contact us</a>
               </li>
             </ul>
           </nav>
@@ -271,15 +313,15 @@
           <div class="social">
             <ui class="social__list">
               <li class="social__item">
-                <a href=""><span class="social__icon  fa fa-facebook"></span>
+                <a href="https://www.facebook.com/Gideon-Advisers-1510837575902366/"><span class="social__icon  fa fa-facebook"></span>
                   <p class="social__text">Facebook page</p></a>
               </li>
               <li class="social__item">
-                <a href=""><span class="social__icon  fa fa-youtube-play"></span>
+                <a href="https://www.youtube.com/channel/UCOC47Cv9KfdngauLrNft34A"><span class="social__icon  fa fa-youtube-play"></span>
                     <p class="social__text">Youtube channel</p></a>
               </li>
               <li class="social__item">
-                <a href=""><span class="social__icon  fa fa-linkedin-square"></span>
+                <a href="https://www.linkedin.com/company/gideon-advisers?trk=company_logo"><span class="social__icon  fa fa-linkedin-square"></span>
                     <p class="social__text">Linkedin</p></a>
               </li>
             </ui>
@@ -288,15 +330,72 @@
         <div class="col-sx-12 col-sm-6 col-md-3 col-lg-3">
 
           <div class="page-footer__information">
-            <h3 class="page-footer__title">Join out news letter</h3>
+            <h3 class="page-footer__title">Join our newsletter</h3>
             <p class="page-footer__text">And always stay informed of the latest company news event!</p>
-            <button class="btn btn--signup"><span class="btn__icon"></span>Sign up</button>
+            <a href="mailto:advisers@GideonAdvisers.com?subject=Join our newsletter" class="btn btn--signup"><span class="btn__icon"></span>Sign up</a>
           </div>
 
         </div>
       </div>
     </div>
   </footer>
+
+  <div class="modal fade" id="marketing" tabindex="-1" role="dialog" aria-labelledby="marketing" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <section class="text-section">
+          <h2 class="section-title">Marketing and Branding</h2>
+          <p class="text-section__text">“Build it and they will come”. It may not tell the entire story, but it does speak of a fundamental truth. Your brand is what sets you apart in the market place. Marketing that brand is how you get the message out to prospective clients. What does your brand say about you? How is it reaching the masses? Whether you’re an emerging, experienced, or advanced adviser the answers to these questions can tell most of your success story; or lack of one. We at Gideon Advisers understand both the painful and rewarding steps hat this process can take you through. There is no better teacher than experience. Allow us to guide you through the path of least resistance to reach your ultimate goal. It’s never easy, but leave the heavy lifting to your competition who might not be as committed to their success as you.</p>          
+        </section>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="sales" tabindex="-1" role="dialog" aria-labelledby="sales" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <section class="text-section">
+          <h2 class="section-title">Sales Development & Ideas</h2>
+          <p class="text-section__text">It only takes one great idea to change the direction of your success. The trick however is putting the idea into action. Even the simplest of the concepts can be challenging to implement. Through scaling all the levels of MDRT achievement, Gideon Advisers founding partners have experienced a wide spectrum of ideas and concepts. From the straight to the winding, the road they have traveled has been mapped out and available in Gideon’s catalogue of best practices. Our support team is ready to share and implement the ideas that best fit your practice and insuring that you achieve the goals you set.</p>          
+        </section>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="management" tabindex="-1" role="dialog" aria-labelledby="management" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <section class="text-section">
+          <h2 class="section-title">Practice management</h2>
+          <p class="text-section__text">Do you make that time consuming call to your carrier to expedite the issuance of an existing case submission, or do you immediately follow up on that tremendous lead that one of your most loyal customers just gave you? Action needs to be taken on both obviously, but the lack of an efficient operational system can be crippling to anyone’s practice when activities and procedures are not clearly defined and understood. Let Gideon Advisers super charge and refine your practice management operation so that efficiency and measurable results rule the day!</p>    
+          <ol class="text-section__numeric-list">
+            <li class="text-section__numeric-item">A link with electronic, fillable version of Fact Finder attached to your calendar date</li>
+            <li class="text-section__numeric-item">Auto notifications functionalities that let your staff know each stage of the case process</li>
+            <li class="text-section__numeric-item">Auto attachment of presentation to your calendar so you don’t need to look for presentation</li>
+            <li class="text-section__numeric-item">Applications ready to be signed electronically</li>
+            <li class="text-section__numeric-item">Auto vault for clients to upload requested documents</li>
+            <li class="text-section__numeric-item">Ipad, PC/Mac, android tablets capabilities for presentations and contract signing</li>
+            <li class="text-section__numeric-item">Full integration with CRM and team collaboration portal</li>
+          </ol>      
+        </section>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="planning" tabindex="-1" role="dialog" aria-labelledby="planning" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <section class="text-section">
+          <h2 class="section-title">Advanced Planning</h2>
+          <p class="text-section__text">How would the commissions from just one solid advanced planning case impact your practice? How about two, or three? This is the arena where the founders of Gideon Advisers truly shine and are able to spread their wings and take full flight. Developing and implementing a proprietary business design has enabled them to regularly handle multimillion premiums without skipping a beat. All of the designs are part of Gideon’s catalogue f best practices and when implemented work like clockwork. We invite you to experience the power and impact that these tools can have on your practice.</p>          
+        </section>
+      </div>
+    </div>
+  </div>
 
   @@include('include/bottom.html')
 </body>
