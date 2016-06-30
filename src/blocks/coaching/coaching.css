@@ -61,6 +61,7 @@
     border-radius: 50%;
     float: left;
     background-color: #d8d8d8;
+    object-fit: cover;
   }
   
   &__text {    
@@ -69,5 +70,6 @@
     line-height: 24px;
     padding-left: 80px;
     font-family: 'Lato';
+    display: block;
   }
 }

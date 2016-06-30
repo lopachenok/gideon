@@ -36,36 +36,35 @@
 -->
       <div class="main-banner__inner container">
        
-        <div class="social-block">
-          <ul class="social-block__list">
-            <li class="social-block__item">
-             <a href="https://www.facebook.com/Gideon-Advisers-1510837575902366/">
-               <span class="social-block__icon  fa fa-facebook"></span>
-                <p class="social-block__counter">90</p>
-             </a>              
-            </li>
-            <li class="social-block__item">
-             <a href="https://www.youtube.com/channel/UCOC47Cv9KfdngauLrNft34A">
-              <span class="social-block__icon  fa fa-youtube-play"></span>
-              <p class="social-block__counter">45</p>
-               </a>       
-            </li>
-            <li class="social-block__item">
-             <a href="https://www.linkedin.com/company/gideon-advisers?trk=company_logo">
-              <span class="social-block__icon  fa fa-linkedin-square"></span>
-              <p class="social-block__counter">69</p>
-               </a>       
-            </li>
-          </ul>
-        </div>
+        @@include('include/social-block.html')
         
       </div>
       <div class="main-banner__slider" id="camera">
-        <div><img src="img/1.jpg" alt=""></div>
-        <div><img src="img/2.jpg" alt=""></div>
-        <div><img src="img/3.jpg" alt=""></div>
-        <div><img src="img/4.jpg" alt=""></div>
-        <div><img src="img/5.jpg" alt=""></div>
+        <div>
+          <img src="img/1.jpg" alt="">
+          <h1 class="main-banner__title">BUILDING YOUR BUSINESS</h1>
+          <h3 class="main-banner__description">GROWTH & PROSPERITY</h3>
+        </div>
+        <div>
+          <img src="img/2.jpg" alt="">
+          <h1 class="main-banner__title">we know the secrets</h1>
+          <h3 class="main-banner__description">of success!</h3>
+        </div>
+        <div>
+          <img src="img/3.jpg" alt="">
+          <h1 class="main-banner__title">save time, save money,</h1>
+          <h3 class="main-banner__description">GROWTH & succeed!</h3>
+        </div>
+        <div>
+          <img src="img/4.jpg" alt="">
+          <h1 class="main-banner__title">we offer ideas that increase</h1>
+          <h3 class="main-banner__description">you revenue</h3>
+        </div>
+        <div>
+          <img src="img/5.jpg" alt="">
+          <h1 class="main-banner__title">powerfull and effective</h1>
+          <h3 class="main-banner__description">cooperation</h3>
+        </div>
       </div>
     </section>
 
@@ -128,16 +127,16 @@
 
             <ul class="coaching__list  coaching__list--first">
               <li class="coaching__item">
-                <div class="coaching__img"></div>
-                <p class="coaching__text">A widow's Social Security dilemma</p>
+                <img src="img/news-img1.jpg" class="coaching__img" alt="">             
+                <a href="https://www.facebook.com/permalink.php?story_fbid=1635541040098685&id=1510837575902366" class="coaching__text">Want to better serve your clients? Team up!</a>
               </li>
               <li class="coaching__item">
-                <div class="coaching__img"></div>
-                <p class="coaching__text">5 things to know about selling annuities under the DOL fiduciary rule</p>
+                <img src="img/news-img2.jpg" class="coaching__img" alt="">
+                <a href="https://www.facebook.com/permalink.php?story_fbid=1635338683452254&id=1510837575902366" class="coaching__text">Brexit: 5 areas financial advisors should watch</a>
               </li>
               <li class="coaching__item">
-                <div class="coaching__img"></div>
-                <p class="coaching__text">LIMRA: Individual life insurance premium increases in Q1 2016</p>
+                <img src="img/news-img3.jpg" class="coaching__img" alt="">
+                <a href="https://www.facebook.com/permalink.php?story_fbid=1633583473627775&id=1510837575902366" class="coaching__text">How to sell value rather than price</a>
               </li>
             </ul>
 
@@ -147,16 +146,16 @@
 
             <ul class="coaching__list  coaching__list--last">
               <li class="coaching__item">
-                <div class="coaching__img"></div>
-                <p class="coaching__text">How the final DOL fiduciary rule will impact advisors</p>
+                <img src="img/news-img4.jpg" class="coaching__img" alt="">
+                <a href="https://www.facebook.com/permalink.php?story_fbid=1632996713686451&id=1510837575902366" class="coaching__text">5 secrets to making larger sales</a>
               </li>
               <li class="coaching__item">
-                <div class="coaching__img"></div>
-                <p class="coaching__text">Why don’t life insurance advisors go after foreign national prospects?</p>
+                <img src="img/news-img5.jpg" class="coaching__img" alt="">
+                <a href="https://www.facebook.com/permalink.php?story_fbid=1631167960535993&id=1510837575902366" class="coaching__text">For retirement security, save early and often [infographic]</a>
               </li>
               <li class="coaching__item">
-                <div class="coaching__img"></div>
-                <p class="coaching__text">Here are 9 ways to preempt a will contest</p>
+                <img src="img/news-img6.jpg" class="coaching__img" alt="">
+                <a href="https://www.facebook.com/permalink.php?story_fbid=1631166390536150&id=1510837575902366" class="coaching__text">6 ways to get prospects and referrals to stop ignoring you</a>               
               </li>
             </ul>
 
@@ -179,7 +178,8 @@
                   <p class="schedule__time">6:20 PM</p>
 -->
                 </li>
-
+                
+                
                 <li class="schedule__item">
                   <span class="schedule__icon">
                    <div class="icon-calendar">
@@ -188,6 +188,20 @@
                   </div>
                   </span>
                   <p class="schedule__event">Webinar "An introduction to Tax Saving and Asset Protection strategies"</p>
+<!--
+                  <p class="schedule__description">Loss Angeles, Bird way</p>
+                  <p class="schedule__time">4:30 PM</p>
+-->
+                </li>
+                
+                <li class="schedule__item">
+                  <span class="schedule__icon">
+                   <div class="icon-calendar">
+                    <div class="icon-calendar__header">sep</div>
+                    <p class="icon-calendar__date">02</p>
+                  </div>
+                  </span>
+                  <p class="schedule__event">Private Training "A client presentation that is designed to generate $100K+ in commissions"</p>
 <!--
                   <p class="schedule__description">Loss Angeles, Bird way</p>
                   <p class="schedule__time">4:30 PM</p>
@@ -222,7 +236,7 @@
             <div class="carriers__item"><img src="img/slider-img-5.png"></div>
           </div>
           <div>
-            <div class="carriers__item"><img src="img/slider-img-6.jpg"></div>
+            <div class="carriers__item"><img src="img/slider-img-6.png"></div>
           </div>
           <div>
             <div class="carriers__item"><img src="img/slider-img-7.jpg"></div>
@@ -391,7 +405,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <section class="text-section">
           <h2 class="section-title">Advanced Planning</h2>
-          <p class="text-section__text">How would the commissions from just one solid advanced planning case impact your practice? How about two, or three? This is the arena where the founders of Gideon Advisers truly shine and are able to spread their wings and take full flight. Developing and implementing a proprietary business design has enabled them to regularly handle multimillion premiums without skipping a beat. All of the designs are part of Gideon’s catalogue f best practices and when implemented work like clockwork. We invite you to experience the power and impact that these tools can have on your practice.</p>          
+          <p class="text-section__text">How would the commissions from just one solid advanced planning case impact your practice? How about two, or three? This is the arena where the founders of Gideon Advisers truly shine and are able to spread their wings and take full flight. Developing and implementing a proprietary business design has enabled them to regularly handle multimillion premiums without skipping a beat. All of the designs are part of Gideon’s catalogue of best practices and when implemented work like clockwork. We invite you to experience the power and impact that these tools can have on your practice.</p>          
         </section>
       </div>
     </div>
