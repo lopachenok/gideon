@@ -59,4 +59,10 @@ $(document).ready(function() {
 
   })
 })
+$(document).ready(function () {
+  var wow = new WOW({
+    mobile: true
+  });
+  wow.init();
+});
 //# sourceMappingURL=main.js.map

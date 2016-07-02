@@ -1,6 +1,6 @@
 .btn {
-  width: 150px;
-  height: 40px;
+  width: 140px;
+  height: 35px;
   border:none;
   background: #e32636;
   color: #fff;
@@ -22,7 +22,7 @@
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
-    height: 40px;
+    height: 35px;
     width: 40px;
     position: relative;
     margin-right: 30px;
@@ -34,7 +34,7 @@
       border: 8px solid transparent;
       border-left: 6px solid #fff;
       right: -14px;
-      top: 12px;
+      top: 10px;
     }
   }
   
