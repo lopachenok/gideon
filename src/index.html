@@ -41,7 +41,11 @@
       </div>
       <div class="main-banner__slider" id="camera">
         <div>
-          <img src="img/1.jpg" alt="">
+          <picture>
+            <source srcset="img/1.jpg" media="(max-width: 320px)" />
+            <source srcset="img/1.jpg" media="(max-width: 768px)" />            
+            <img src="img/1.jpg" alt="" />
+          </picture>          
           <h1 class="main-banner__title">BUILDING YOUR BUSINESS</h1>
           <h3 class="main-banner__description">GROWTH & PROSPERITY</h3>
         </div>

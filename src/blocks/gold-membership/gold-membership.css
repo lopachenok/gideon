@@ -1,10 +1,10 @@
-.gold-membership {
-  
+.gold-membership {  
   padding-bottom: 105px;
   background: url(gold-membership-bg.png);
   background-size: cover;
   overflow: hidden;
   position: relative;
+  background-position: center;
   
   &__inner {
     position: relative;

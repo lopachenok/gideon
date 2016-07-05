@@ -45,7 +45,7 @@ $(document).ready(function() {
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    autoplay: true,
+   // autoplay: true,
     autoplaySpeed: 3000
   });
 });
@@ -61,7 +61,7 @@ $(document).ready(function() {
 })
 $(document).ready(function () {
   var wow = new WOW({
-    mobile: true
+    mobile: false
   });
   wow.init();
 });
