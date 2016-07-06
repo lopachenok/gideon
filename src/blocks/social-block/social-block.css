@@ -22,6 +22,7 @@
   &__item {
     display: inline-block;
     margin-right: 30px;
+    position: relative;
     
     &:last-child {
       margin-right: 0;
@@ -49,3 +50,18 @@
   }
   
 }
+
+.fb_iframe_widget {
+  position: absolute !important;
+}
+.fb_iframe_widget iframe html{
+  width: 100px;
+}
+._51mz {
+    width: 80px;
+    
+    tr {
+      display: block;
+      float: left;
+    }
+  }
