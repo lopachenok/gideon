@@ -1,0 +1,24 @@
+.breadcrumbs {
+  
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  
+  &__link {
+    padding-left: 25px;
+    color: #072566;
+    font-size: 18px;
+    line-height: 28px;
+    position: relative;
+    
+    &:before {
+      content: '\2190';
+      position: absolute;
+      left: 0;
+      top: -6px;
+      color: #072566;
+    }
+  }
+  
+}

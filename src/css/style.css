@@ -31,3 +31,6 @@
 @import '../.././src/blocks/modal/modal.css';
 @import '../.././src/blocks/map/map.css';
 @import '../.././src/blocks/contact-form/contact-form.css';
+@import '../.././src/blocks/breadcrumbs/breadcrumbs.css';
+@import '../.././src/blocks/full-item/full-item.css';
+@import '../.././src/blocks/see-also/see-also.css';

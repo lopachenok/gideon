@@ -76,11 +76,33 @@
       background-image: none;
       text-align: center;
       font-size: 26px;
-      padding-top: 7px;
+      padding-top: 4px;
       
       &:after {
-      border-left: 6px solid #b61e2b;
-    }
+        border-left: 6px solid #b61e2b;
+      }
     }
   }
+  
+  &--schedule {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+    background-color: #485e70;
+    box-shadow: 0 3px 0 #27333d;    
+    
+    .btn__icon {
+      background-color: #637685;
+      background-image: none;
+      text-align: center;
+      font-size: 19px;
+      padding-top: 8px;
+      
+      &:after {
+        border-left: 6px solid #637685;
+      }
+    }
+  }
+  
+  
 }

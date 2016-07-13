@@ -50,18 +50,36 @@
   }
   
 }
+/*
 
-.fb_iframe_widget {
-  position: absolute !important;
-}
-.fb_iframe_widget iframe html{
-  width: 100px;
-}
-._51mz {
-    width: 80px;
-    
-    tr {
-      display: block;
-      float: left;
-    }
+.IN-widget {
+  width: 94px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+ & > span:first-child {
+    width: 40px;
+    overflow: hidden;
+   opacity: 0;
+   height: 40px;
+  }  
+  
+ & > span:last-child {
+    height: 31px;
+    position: relative;
+    left: -7px;
+    visibility: hidden;
   }
+}
+
+.IN-right .IN-right .IN-right .IN-right {
+  visibility: visible;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  left: -4px;
+}
+
+*/

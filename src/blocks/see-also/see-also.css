@@ -1,0 +1,12 @@
+.see-also {
+  
+  &__inner {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  &__container {
+    padding-top: 40px;
+  }
+}
